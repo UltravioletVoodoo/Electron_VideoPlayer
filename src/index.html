@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Video Player</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div>
+      <video class='videoPlayer' controls>
+        <source src='../public/video/movie.mp4' type='video/mp4'>
+      </video>
+    </div>
+    <div class='timeline'>
+      <p>timeline</p>
+    </div>
+    <div class='uploadArea'>
+      <p class='uploadArea-text'>Import</p>
+    </div>
+    <div class='libraryModal' id='libraryModal'>
+      <div class='libraryModal-toggleButton' id='libraryModal-toggleButton' onclick="toggleLibrary()">
+        <p class='libraryModal-toggleButton-text'>&lt;</p>
+      </div>
+      <p class='libraryModal-title'>Library</p>
+    </div>
+  </body>
+  <script src='./index.js'></script>
+</html>

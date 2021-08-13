@@ -1,0 +1,87 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: auto;
+  max-width: 38rem;
+  padding: 2rem;
+}
+.videoPlayer {
+  width: 100%;
+}
+.timeline {
+  width: 100%;
+  height: 100px;
+  overflow-x: scroll;
+}
+.uploadArea {
+  width: 50%;
+  height: 50px;
+  position:absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  border: 1px solid black;
+  background-color: yellow;
+  transition: 0.4s;
+}
+.uploadArea:hover {
+  background-color: orange;
+}
+.uploadArea-text {
+  font-family: cursive;
+  font-size: 26px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+}
+.libraryModal {
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  left: 100%;
+  top: 0;
+  transition: 0.5s;
+  background-color: darkgray;
+  z-index: 10;
+}
+.libraryModal-open {
+  left: calc(100% - 250px);
+}
+.libraryModal-title {
+  font-size: 50px;
+  position: relative;
+  margin: 0 0 0 15px;
+  font-family: cursive;
+}
+.libraryModal-toggleButton {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: -33px;
+  top: 50px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 100%;
+  transition: 0.4s;
+  cursor: pointer;
+  transform-origin: center;
+}
+.libraryModal-toggleButton:hover {
+  background-color: darkgray;
+}
+.libraryModal-toggleButton-text {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  line-height: 15px;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  font-family: cursive;
+  transition: 0.5s;
+}
+.flip {
+  transform: rotate(180deg);
+}
